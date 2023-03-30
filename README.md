@@ -8,11 +8,10 @@ You can [preview the completed demo app here](https://odyssey-catstronauts.netli
 
 The course will walk you step by step on how to implement the features you see in the demo app. This codebase is the starting point of your journey!
 
-There are 3 main folders:
+There are 2 main folders:
 
 - `server`: The starting point of our GraphQL server.
 - `client`: The starting point of our React application.
-- `final`: The final stage of both the server and client folders, with all of the steps and code completed!
 
 To get started:
 
@@ -32,4 +31,4 @@ This will open up `localhost:3000` in your web browser.
 
 ## Getting Help
 
-For any issues or problems concerning the course content, please refer to the [Odyssey topic in our community forums](https://community.apollographql.com/tags/c/help/6/odyssey).
+Feel free to reach out at info@sac.associates, or vie phone at (916) 862-6230
