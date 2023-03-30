@@ -29,6 +29,9 @@ In another terminal window,
 
 This will open up `localhost:3000` in your web browser.
 
+## REST API data 
+https://odyssey-lift-off-rest-api.herokuapp.com/
+
 ## Getting Help
 
 Feel free to reach out at info@sac.associates, or vie phone at (916) 862-6230
