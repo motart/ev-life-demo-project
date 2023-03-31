@@ -1,12 +1,9 @@
-# Odyssey Lift-off I: Basics
+# EV Life skills acquisition speed demo for Rachid A.
 
-Welcome to the companion app of Odyssey Lift-off I! You can [find the course lessons and instructions on Odyssey](https://odyssey.apollographql.com/lift-off-part1), Apollo's learning platform.
 
-You can [preview the completed demo app here](https://odyssey-catstronauts.netlify.app/).
+You can [preview the completed demo app here](https://lift-off-client-demo.netlify.app/).
 
 ## How to use this repo
-
-The course will walk you step by step on how to implement the features you see in the demo app. This codebase is the starting point of your journey!
 
 There are 2 main folders:
 
@@ -21,7 +18,7 @@ To get started:
 
 This will start the GraphQL API server.
 
-In another terminal window,
+In another Terminal window,
 
 1. Navigate to the `client` folder.
 1. Run `npm install`.
@@ -29,9 +26,7 @@ In another terminal window,
 
 This will open up `localhost:3000` in your web browser.
 
-## REST API data 
-https://odyssey-lift-off-rest-api.herokuapp.com/
+## Have questions? 
+Feel free to reach me at info@sac.associates or (916) 862-6230
 
-## Getting Help
 
-Feel free to reach out at info@sac.associates, or vie phone at (916) 862-6230
