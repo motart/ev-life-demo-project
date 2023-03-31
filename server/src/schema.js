@@ -1,34 +1,51 @@
-const gql = require("graphql-tag");
+const gql = require('graphql-tag');
 
 const typeDefs = gql`
-    type Query {
-        "Get tracks available"
-        tracksForHome: [Track!]!
-    }
+  type Query {
+    "Query to get tracks array for the homepage grid"
+    tracksForHome: [Track!]!
+    "Fetch a specific track, provided a track's ID"
+    track(id: ID!): Track!
+  }
 
-    "Group of modules related to a specific topic"
-    type Track {
-        id: ID!
-        "Title of our track"
-        title: String!
-        "URL to our thumbnail/photo"
-        thumbnail: String
-        "Approximate lenght of a track in minutes"
-        length: Int
-        "Number of modules contained in a Track"
-        modulesCount: Int
-        "Author"
-        author: Author!
-    }
+  "A track is a group of Modules that teaches about a specific topic"
+  type Track {
+    id: ID!
+    "The track's title"
+    title: String!
+    "The track's main Author"
+    author: Author!
+    "The track's illustration to display in track card or track page detail"
+    thumbnail: String
+    "The track's approximate length to complete, in minutes"
+    length: Int
+    "The number of modules this track contains"
+    modulesCount: Int
+    "The track's complete description, can be in markdown format"
+    description: String
+    "The number of times a track has been viewed"
+    numberOfViews: Int
+    "The track's complete array of Modules"
+    modules: [Module!]!
+  }
 
-    "The author of the track"
-    type Author {
-        id: ID!
-        "Author's name"
-        name: String!
-        "Author's picture URL"
-        photo: String
-    }
+  "Author of a complete Track or a Module"
+  type Author {
+    id: ID!
+    "Author's first and last name"
+    name: String!
+    "Author's profile picture"
+    photo: String
+  }
+
+  "A Module is a single unit of teaching. Multiple Modules compose a Track"
+  type Module {
+    id: ID!
+    "The module's title"
+    title: String!
+    "The module's length in minutes"
+    length: Int
+  }
 `;
 
 module.exports = typeDefs;
